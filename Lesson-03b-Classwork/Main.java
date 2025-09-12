@@ -7,9 +7,9 @@ class Main {
   // program begins.  
 
   void init(){
-    System.out.printIn("Liming Liu");
-    System.out.printIn("Liming Liu at 6705 152nd st Flushing 11367");
-    System.out.printIn("Liming Liu \n 6705 152nd st Flushing 11367");
+    System.out.println("Liming Liu");
+    System.out.println("Liming Liu at 6705 152nd st Flushing 11367");
+    System.out.println("Liming Liu \n 6705 152nd st Flushing 11367");
   }
 
   
