@@ -40,7 +40,7 @@ class Main {
     NOTE: Does it look correct, check with a calculator?
 */
     int avg=g1+g2+g3/3;
-    System.out.println("The average grade is:"+tot);
+    System.out.println("The average grade is:"+avg);
 
 
 /*  
