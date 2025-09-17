@@ -63,7 +63,7 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    int y1=2x(x+1)(-x/2)/A;
+    int y1=2x*(x+1)*(-x/2)/A;
     System.out.println("The result is:"+y1);
 
 
@@ -78,8 +78,6 @@ class Main {
     Declare and assign values to any new variables
 */
  
-
-
 
 
 
