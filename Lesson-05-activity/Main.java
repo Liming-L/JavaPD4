@@ -28,8 +28,8 @@ class Main {
     int g1=69;
     int g2=88;
     int g3=90;
-    int sum=g1+g2+g3;
-    System.out.println("The sum is:"+sum);
+    int tot=g1+g2+g3;
+    System.out.println("The sum is:"+tot);
 
 
 /*  
@@ -39,7 +39,8 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-
+    int avg=g1+g2+g3/3;
+    System.out.println("The average grade is:"+tot);
 
 
 /*  
