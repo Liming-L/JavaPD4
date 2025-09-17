@@ -56,12 +56,15 @@ class Main {
 
 /*  
     Challenge 5:
-    Using the variables same variables from challenge4 above, write the following equation in EQ2.PNG file in Java, store the result and the display it:
+    Using the variables same variables from challenge4 above, 
+    write the following equation in EQ2.PNG file in Java, 
+    store the result and the display it:
 
     Declare and assign values to any new variables
 
 */
- 
+    int y1= 2x(x+1)(-x/2)/A;
+    System.out.println("The result is:"+y1);
 
 
 
