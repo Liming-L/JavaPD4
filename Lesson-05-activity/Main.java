@@ -51,7 +51,7 @@ class Main {
 */
     int A=10;
     int x=4;
-    int y=A/x+1;
+    int y=A/(x+1);
     System.out.println("The result is:"+y);
 
 /*  
