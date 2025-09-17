@@ -49,7 +49,10 @@ class Main {
     Declare and assign values to any new variables
 
 */
-  
+    int A=10;
+    int x=4;
+    int y=A/x+1;
+    System.out.println("The result is:"+y);
 
 /*  
     Challenge 5:
