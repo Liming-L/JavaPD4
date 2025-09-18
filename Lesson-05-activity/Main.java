@@ -63,7 +63,7 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    int y1=2x5*(x5+1)*(-x5/2)/A;
+    int y1=2*(N)*(N+1)*(-N/2)/A;
     System.out.println("The result is:"+y1);
 
 
