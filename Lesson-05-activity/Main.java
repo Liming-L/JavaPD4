@@ -77,7 +77,7 @@ class Main {
  
     int base=12;
     int height=4;
-    int Area=(1/2)(base)*height;
+    int Area=(1.0/2)*base*height;
     System.out.println("The result is:"+Area);
 
 /*  
