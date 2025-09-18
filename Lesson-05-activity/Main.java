@@ -67,9 +67,6 @@ class Main {
     System.out.println("The result is:"+y1);
 
 
-
-
-
 /*  
     Challenge 6:
     Create the variables and write the equation in
@@ -78,8 +75,10 @@ class Main {
     Declare and assign values to any new variables
 */
  
-
-
+    int base=12;
+    int height=4;
+    int Area=(1/2)(base)*height;
+    System.out.println("The result is:"+Area);
 
 /*  
     **** Bonus Challenge ****:
