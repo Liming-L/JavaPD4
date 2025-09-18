@@ -75,9 +75,9 @@ class Main {
     Declare and assign values to any new variables
 */
  
-    int base=12;
-    int height=4;
-    int Area=0.5*base*height;
+    int b1=12;
+    int h2=4;
+    int Area=0.5*b1*h2;
     System.out.println("The result is:"+ Area);
 
 /*  
