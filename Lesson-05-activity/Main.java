@@ -81,7 +81,7 @@ class Main {
     int b=4;
     int h=5;
     int Area=1/2bh
-
+    System.out.println("The result is:"+Area);
 
 
 /*  
