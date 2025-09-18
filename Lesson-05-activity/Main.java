@@ -51,8 +51,8 @@ class Main {
 */
     int A=10;
     int N=4;
-    int y=A/(N+1);
-    System.out.println("The result is:"+y);
+    int K=A/(N+1);
+    System.out.println("The result is:"+K);
 
 /*  
     Challenge 5:
