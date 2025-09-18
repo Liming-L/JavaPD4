@@ -80,7 +80,7 @@ class Main {
  
     int B=4;
     int h=5;
-    int Area=1/2(B)*h;
+    int Area=(1/2)(B)*h;
     System.out.println("The result is:"+Area);
 
 
