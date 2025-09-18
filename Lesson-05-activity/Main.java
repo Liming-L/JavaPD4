@@ -50,8 +50,8 @@ class Main {
 
 */
     int A=10;
-    int x5=4;
-    int y=A/(x5+1);
+    int N=4;
+    int y=A/(N+1);
     System.out.println("The result is:"+y);
 
 /*  
