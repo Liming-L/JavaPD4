@@ -9,16 +9,20 @@ class Main {
     Challenge 1:
     1) Create the variables, ask the user for the variable values, write the equation in file EQ1-act6 and display the equation value.
 */
-    System.out.println(x:"enter x");
+    System.out.println("enter x");
     double x= Input.readDouble();
     double y=0;
     y=Math.pow(x,7);
     System.out.println(y);
 /*  
     Challenge 2:
-    1) Create the variables, ask the user for the variable values, write the equation in fileEQ1.1-act6 and display the equation value.
+    1) Create the variables, ask the user for the variable values, write the equation in file EQ1.1-act6 and display the equation value.
 */
-  
+    System.out.println(x:"enter x");
+    double z=Input.readDouble();
+    double q=0;
+    q=Math.pow(z,3)+5;
+    System.out.println(q);
 
 /*  
     Challenge 3:
