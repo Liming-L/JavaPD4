@@ -53,7 +53,6 @@ class Main {
 /*  
     Challenge 5:
     Create the variables, ask the user for the variable values, write the equation in file EQ4-act6 and display the equation value..
-    
 */
 
 
