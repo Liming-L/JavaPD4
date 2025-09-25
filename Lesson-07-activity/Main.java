@@ -18,7 +18,7 @@ class Main {
     Challenge 2:
     1) Create the variables, ask the user for the variable values, write the equation in file EQ1.1-act6 and display the equation value.
 */
-    System.out.println(x:"enter x");
+    System.out.println("enter x");
     double z=Input.readDouble();
     double q=0;
     q=Math.pow(z,3)+5;
@@ -29,7 +29,7 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ2-act6 and display the equation value..
     
 */
-    System.out.println(x:"enter x");
+    System.out.println("enter x");
     double t=Input.readDouble();
     double r=Input.readDouble();
     double s=0;
@@ -42,7 +42,7 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ3-act6 and display the equation value..
     
 */
-    System.out.println(x:"enter x");
+    System.out.println("enter x");
     double a=Input.readDouble();
     double b=Input.readDouble();
     double c=0;
@@ -54,16 +54,25 @@ class Main {
     Challenge 5:
     Create the variables, ask the user for the variable values, write the equation in file EQ4-act6 and display the equation value..
 */
-
-
-
+    System.out.println("enter x");
+    double x1=Input.readDouble();
+    double x2=Input.readDouble();
+    double y1=Input.readDouble();
+    double y2=Input.readDouble();
+    double d=0;
+    d=Math.sqrt((Math.pow(x2-x1,2))+(Math.pow(y2-y1,2)));
+    System.out.println(d);
 
 /*  
     Challenge 6:
     Create the variables, ask the user for the variable values, write the equation g=sin(deg) and display the equation value..
     
 */
-
+    System.out.println("enter x");
+    double deg=Input.readDouble();
+    g=0;
+    g=Math.sin(deg);
+    System.out.println(g);
 
 
 
@@ -73,7 +82,12 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ5-act6 and display the equation value.
     
 */
-
+    System.out.println("enter x");
+    double m=Input.readDouble();
+    double n=Input.readDouble();
+    k=0;
+    k=(Math.pow(m,5))/(Math.sqrt(n+1));
+    System.out.println(k);
 
 
 
