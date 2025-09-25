@@ -29,7 +29,12 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ2-act6 and display the equation value..
     
 */
-
+    System.out.println(x:"enter x");
+    double t=Input.readDouble();
+    double r=Input.readDouble();
+    double s=0;
+    s=Math.pow(t,5)*Math.pow(r+2,4);
+    System.out.println(s);
  
 
 /*  
@@ -37,7 +42,12 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ3-act6 and display the equation value..
     
 */
-
+    System.out.println(x:"enter x");
+    double a=Input.readDouble();
+    double b=Input.readDouble();
+    double c=0;
+    c=Math.sqrt(a+b);
+    System.out.println(c);
 
 
 /*  
