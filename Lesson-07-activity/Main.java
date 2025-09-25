@@ -9,7 +9,7 @@ class Main {
     Challenge 1:
     1) Create the variables, ask the user for the variable values, write the equation in file EQ1-act6 and display the equation value.
 */
-    System.out.println(x:"Enter x");
+    System.out.println(x:"enter x");
     double x= Input.readDouble();
     double y=0;
     y=Math.pow(x,7);
