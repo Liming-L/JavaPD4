@@ -70,7 +70,7 @@ class Main {
 */
     System.out.println("enter x");
     double deg=Input.readDouble();
-    g=0;
+    double g=0;
     g=Math.sin(deg);
     System.out.println(g);
 
@@ -85,7 +85,7 @@ class Main {
     System.out.println("enter x");
     double m=Input.readDouble();
     double n=Input.readDouble();
-    k=0;
+    double k=0;
     k=(Math.pow(m,5))/(Math.sqrt(n+1));
     System.out.println(k);
 
