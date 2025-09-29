@@ -9,14 +9,13 @@ class Main {
     double f= 97;
     double FtoC=0;
     FtoC=(32*f-32)*(5/9);
-    System.out.println(FtoC);
   }
 
   void print(String msg){
 	System.out.println(msg);
   }
 
-  void print(String FtoC){
+  void print(double FtoC){
 	System.out.println(FtoC);
 
   }
