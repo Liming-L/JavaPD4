@@ -15,7 +15,7 @@ class Main {
 
   void FtoC(double F){
     double c=(F-32)*(5/9.0);
-	return c;
+	return cel;
   }
   
  
