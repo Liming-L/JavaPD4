@@ -13,7 +13,7 @@ class Main {
 	  System.out.println(msg);
   }
 
-  FtoC(double F){
+  double FtoC(double F){
     double c=(F-32)*(5/9.0);
 	return c;
   }
