@@ -17,13 +17,13 @@ class Main {
   double FtoC(double F){
     double c=(F-32)*(5/9.0);
 	  return c;
-    System.out.println(FtoC);
+    System.out.println(c);
   }
   
   double sphereVolume(double r){
     double ans=(4/3.0)*Math.PI*(Math.pow(r,3));
     return ans;
-    System.out.println(sphereVolume);
+    System.out.println(ans);
   }
 
 
