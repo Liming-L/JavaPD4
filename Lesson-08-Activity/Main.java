@@ -6,9 +6,9 @@ class Main {
 
   void init(){
 	print("Hello");
-    double f= 97;
+    double f= 98.6;
     double FtoC=0;
-    FtoC=(32*f-32)*(5/9);
+    FtoC=(f-32)*(5/9);
   }
 
   void print(String msg){
