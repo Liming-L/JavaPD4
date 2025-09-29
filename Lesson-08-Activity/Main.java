@@ -6,6 +6,7 @@ class Main {
 
   void init(){
 	print("Hello");
+	double cel=FtoC(73.6);
   }
 
   void print(String msg){
@@ -14,9 +15,8 @@ class Main {
 
   void FtoC(double F){
     double c= 98.6;
-    double FtoC=0;
     FtoC=(f-32)*(5/9.0);
-	System.out.println(F);
+	return c;
   }
   
  
