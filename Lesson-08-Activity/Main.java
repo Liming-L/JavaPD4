@@ -21,7 +21,7 @@ class Main {
   
   double sphereVolume(double r){
     double ans=(4/3.0)*Math.PI*(Math.pow(r,3));
-    System.out.println(sphereVolume);
+    return ans;
   }
 
 
