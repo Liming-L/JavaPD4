@@ -5,7 +5,7 @@ class Main {
 	}
 
   void init(){
-
+	print("Hello");
   }
 
   void print(String msg){
