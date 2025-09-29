@@ -7,6 +7,7 @@ class Main {
   void init(){
 	print("Hello");
 	double c=FtoC(73.6);
+  double ans=sphereVolume(4);
   }
 
   void print(String msg){
@@ -18,6 +19,10 @@ class Main {
 	  return c;
   }
   
+  void sphereVolume(double r){
+    double ans=(4/3.0)*Math.pi*(Math.pow(r,3));
+    return ans;
+  }
 
 
  
