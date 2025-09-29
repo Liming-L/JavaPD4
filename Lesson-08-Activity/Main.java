@@ -19,8 +19,8 @@ class Main {
 	  return c;
   }
   
-  void sphereVolume(double r){
-    double ans=(4/3.0)*Math.pi*(Math.pow(r,3));
+  double sphereVolume(double r){
+    double ans=(4/3.0)*Math.PI*(Math.pow(r,3));
     return ans;
   }
 
