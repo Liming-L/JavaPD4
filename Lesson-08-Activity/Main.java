@@ -13,7 +13,7 @@ class Main {
 	System.out.println(msg);
   }
 
-  void FtoC(double F){
+	FtoC(double F){
     double c= 98.6;
     FtoC=(f-32)*(5/9.0);
 	return c;
