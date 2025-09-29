@@ -10,6 +10,10 @@ class Main {
   double ans=sphereVolume(4);
   double radius=8;
   double h=7;
+  double x1=5;
+  double x2=8;
+  double y1=5;
+  double y2=2;
   }
 
   void print(String msg){
@@ -31,6 +35,12 @@ class Main {
     return res;
   }
 
+   double distance(double x1, double x2, double y1, double y2){
+    double result=(Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2)));
+    return result;
+
+
+  }
  
 
 }
