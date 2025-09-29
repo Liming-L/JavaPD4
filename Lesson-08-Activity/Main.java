@@ -6,8 +6,7 @@ class Main {
 
   void init(){
 	print("Hello");
-	System.out.println("enter Fahrenheit");
-    double f= Input.readDouble();
+    double f= 97;
     double FtoC=0;
     FtoC=(32*f-32)*(5/9);
     System.out.println(FtoC);
