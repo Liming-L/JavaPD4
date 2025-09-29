@@ -10,13 +10,15 @@ class Main {
   }
 
   void print(String msg){
-	System.out.println(msg);
+	  System.out.println(msg);
   }
 
-  void FtoC(double F){
+  FtoC(double F){
     double c=(F-32)*(5/9.0);
 	return c;
   }
   
+
+
  
 }
