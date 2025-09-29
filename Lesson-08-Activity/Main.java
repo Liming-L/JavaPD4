@@ -26,7 +26,7 @@ class Main {
     return ans;
   }
 
-  int coneVolume(double h, double radius){
+  double coneVolume(double h, double radius){
     double res=(Math.PI)*(Math.pow(radius,2)*(h/3.0));
     return res;
   }
