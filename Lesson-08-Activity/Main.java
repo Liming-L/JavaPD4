@@ -9,19 +9,23 @@ class Main {
   }
   void init(){
 	  double c=FtoC(73.6);
+    System.out.println(c);
   }
   void init(){
     double ans=sphereVolume(4);
+    System.out.println(ans);
   }
   void init(){
     double radius=8;
     double h=7;
+    System.out.println(res);
   }
   void init(){
     double x1=5;
     double x2=8;
     double y1=5;
     double y2=2;
+    System.out.println(result);
   }
 
   void print(String msg){
