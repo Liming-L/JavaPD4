@@ -5,15 +5,23 @@ class Main {
 	}
 
   void init(){
-	print("Hello");
-	double c=FtoC(73.6);
-  double ans=sphereVolume(4);
-  double radius=8;
-  double h=7;
-  double x1=5;
-  double x2=8;
-  double y1=5;
-  double y2=2;
+	  print("Hello");
+  }
+  void init(){
+	  double c=FtoC(73.6);
+  }
+  void init(){
+    double ans=sphereVolume(4);
+  }
+  void init(){
+    double radius=8;
+    double h=7;
+  }
+  void init(){
+    double x1=5;
+    double x2=8;
+    double y1=5;
+    double y2=2;
   }
 
   void print(String msg){
