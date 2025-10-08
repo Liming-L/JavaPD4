@@ -23,7 +23,7 @@ class Main {
         else if (tickets>=9 && tickets<=16){
           return "Each ticket cost $10.50";
         }
-        else (tickets>=16){
+        else if(tickets>=16){
           return "Each ticket cost $8.5";
         }
     }
@@ -40,6 +40,6 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-
+    String 
 
 }
