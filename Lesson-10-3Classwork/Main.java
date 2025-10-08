@@ -40,6 +40,6 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-    String 
+
 
 }
