@@ -40,6 +40,14 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-
+    double groceryDiscount(double total, int beans) {
+      if (total >= 100 && total <= 200 && beans >= 3) {
+        return 10.0;
+      } else if (total > 200 && beans > 4) {
+        return 25.0;
+      } else {
+        return 0.0;
+      }
+   }
 
 }
