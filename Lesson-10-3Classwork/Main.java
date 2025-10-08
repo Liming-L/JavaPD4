@@ -4,7 +4,7 @@ class Main {
   }
 
   void init(){
-
+    int tickets=67;
         
   }
 
