@@ -17,7 +17,7 @@ class Main {
 	else{
 		return gpaValue;
 	}
-  Boolean isGraduating(int gradelevel && int credits){
+  Boolean isGraduating(int gradelevel, int credits){
 	if(gradelevel=12 && credits>=44){
 		return True;
 	}
@@ -27,7 +27,7 @@ class Main {
 	}
   }
  
-  double bmi(double weight, double height){
+  String bmi(double weight, double height){
 	double bmi=(weight/(height*height))*703;
 	if(bmi<=18.4){
 		return "Underweight";
@@ -47,10 +47,10 @@ class Main {
 	if(weight<=10){
 		return"0";
 	}
-	else if(weight>10&&<=15){
+	else if(weight>10&&weight<=15){
 		return 5;
 	}
-	else if(weight>15&&<=25){
+	else if(weight>15&&weight<=25){
 		return 10;
 	}
 	else (weight>25){
