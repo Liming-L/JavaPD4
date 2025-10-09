@@ -6,8 +6,8 @@ class Main {
 	}
 
 	void init(){
-		System.out.println("Student is Graduating")
-   		System.out.println("Student is NOT Graduating")
+		System.out.println("Student is Graduating");
+   		System.out.println("Student is NOT Graduating");
   }
 
   double gpa(double gpaValue){
@@ -19,10 +19,10 @@ class Main {
 	}
   String isGraduating(int gradelevel && int credits){
 	if(gradelevel=12 && credits>=44){
-		return "ture";
+		return "Ture";
 	}
 	else{
-		return "false";
+		return "False";
 	}
 	}
   }
@@ -48,13 +48,13 @@ class Main {
 		return"0";
 	}
 	else if(weight>10&&<=15){
-		return "5";
+		return 5;
 	}
 	else if(weight>15&&<=25){
-		return "10";
+		return 10;
 	}
 	else (weight>25){
-		return "10.00+0.2*weight";
+		return 10.00+0.2*weight;
 	}
   }
 }
