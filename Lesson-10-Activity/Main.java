@@ -45,7 +45,7 @@ class Main {
 
   double shippingCost(double weight){
 	if(weight<=10){
-		return"0";
+		return 0;
 	}
 	else if(weight>10&&weight<=15){
 		return 5;
