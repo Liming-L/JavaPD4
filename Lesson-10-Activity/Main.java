@@ -17,12 +17,12 @@ class Main {
 	else{
 		return gpaValue;
 	}
-  String isGraduating(int gradelevel && int credits){
+  Boolean isGraduating(int gradelevel && int credits){
 	if(gradelevel=12 && credits>=44){
-		return "Ture";
+		return True;
 	}
 	else{
-		return "False";
+		return False;
 	}
 	}
   }
