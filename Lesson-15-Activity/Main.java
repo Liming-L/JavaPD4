@@ -9,10 +9,12 @@ class Main {
 
   void init(){
 
-    
-    
   }
 
-
+  String spaces(int N){
+    if(N<0){
+      return "";
+    }
+  }
   
 }
