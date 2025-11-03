@@ -7,18 +7,10 @@ class Main {
 
   void init(){
     System.out.println(swapLetter("the seen","e","%"));
-
-
-    
-  }
-
-  //will use reverse for problem 3
-  String reverse(String s){
-    String bld="";
-    for(int x=s.length()-1; x>=0; x--)
-      bld+=s.substring(x,x+1);
-
-    return bld;
+    System.out.println(encryption2("abcdefghi"));
+    System.out.println(encryption2("abcdefgh"));
+    System.out.print(encryption3("abcdef"));
+    System.out.print(encryption3("abcde"));
   }
 
   String swapLetter(String str,String find, String replace){
@@ -30,6 +22,41 @@ class Main {
       }else{
         result+=current;
       }
+    }
+    return result;
+  }
+
+  String encryption2(String strng){
+    int mid=strng.length()/2;
+    String firstHalf=strng.substring(0,mid);
+    String secondHalf=strng.substring(mid);
+
+    String result="";
+
+    for(int i=0;i<firstHalf.length();i++){
+      result+=firstHalf.charAt(i);
+      result+=secondHalf.charAt(i);
+    }
+
+    if(secondHalf.length()>firstHalf.length()){
+      result+=secondHalf.charAt(secondHalf.length()-1);
+    }
+
+    return result;
+  }
+
+  String encryption3(String s){
+    String result="";
+    int left=0;
+    int right=s.length()-1;
+
+    while(left<=right){
+      result+=s.substring(left,left+1);
+      if(left!=right){
+        result+=s.substring(right,right+1);
+      }
+      left++;
+      right--;
     }
     return result;
   }
