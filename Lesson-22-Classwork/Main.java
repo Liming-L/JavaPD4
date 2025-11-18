@@ -6,7 +6,7 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-   String[] friends={"","","","",};
+   String[] friends={"Joe","Mary","Toni","Charlie",};
    double[] tempC={-4.5,0,23,34,5,10};
    double[] tempF=convert(tempC);
    for(int i=0;i<tempF.length;i++){
