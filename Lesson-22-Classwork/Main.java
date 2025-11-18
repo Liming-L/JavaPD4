@@ -9,6 +9,9 @@ class Main {
    String[] friends={"","","","",};
    double[] tempC={-4.5,0,23,34,5,10};
    double[] tempF=convert(tempC);
+   for(int i=0;i<tempF.length;i++){
+    print(tempF[i]);
+   }
 
   }
   double[]convert(double[] c){
