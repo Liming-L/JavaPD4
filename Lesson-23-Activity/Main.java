@@ -22,6 +22,9 @@ class Main {
     int[]drawn={2,9,19,21,25,33};
     int matches=checkLotto(picks,drawn);
     System.out.println("You matched "+matches+" lotto numbers!");
+
+    int[]numbers={5,12,7,3,42,8};
+    System.out.println(biggest(numbers));
   }
 
   double total(double[] prices){
@@ -53,6 +56,17 @@ class Main {
       }
     }
     return count;
+  }
+
+  int biggest(int[] arr){
+    int max=arr[0];
+
+    for(int i=1;i<arr.length;i++){
+      if(arr[i]>max){
+        max=arr[i];
+      }
+    }
+    return max;
   }
 
 
