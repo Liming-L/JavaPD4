@@ -21,7 +21,7 @@ class Main {
     int[]picks={4,9,15,21,28,33};
     int[]drawn={2,9,19,21,25,33};
     int matches=checkLotto(picks,drawn);
-    System.out.println("You matched"+matches+"lotto numbers!");
+    System.out.println("You matched "+matches+" lotto numbers!");
   }
 
   double total(double[] prices){
