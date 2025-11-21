@@ -27,8 +27,8 @@ class Main {
     return totalPrice;
   }
 
-  boolean isin(int[] numbers,int target){
-    for(int num:numbers){
+  boolean isin(int[] arr,int num){
+    for(int value:arr){
       if(value==num){
         return true;
       }
