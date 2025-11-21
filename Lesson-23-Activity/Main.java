@@ -11,6 +11,8 @@ class Main {
     double[] prices={19.99,49.99,15.49,23.99,10.00};
     double totalPriceWithTax=total(prices);
     System.out.println("Total price including tax:"+totalPriceWithTax);
+
+    int[] numbers={3,7,12,5,9,21};
   }
 
   double total(double[] prices){
@@ -26,7 +28,12 @@ class Main {
   }
 
   boolean isin(int[] numbers,int target){
-    for(int num:numbers)
+    for(int num:numbers){
+      if(value==num){
+        return true;
+      }
+    }
+    return false;
   }
 
 
