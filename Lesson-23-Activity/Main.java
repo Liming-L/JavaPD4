@@ -17,6 +17,11 @@ class Main {
     int search2=10;
     System.out.println(search1+" in array?"+isin(numbers,search1));
     System.out.println(search2+" in array?"+isin(numbers,search2));
+
+    int[]picks={4,9,15,21,28,33};
+    int[]drawn={2,9,19,21,25,33};
+    int matches=checkLotto(picks,drawn);
+    System.out.println("You matched"+matches+"lotto numbers!");
   }
 
   double total(double[] prices){
@@ -38,6 +43,16 @@ class Main {
       }
     }
     return false;
+  }
+
+  int checkLotto(int[] picks,int[] drawn){
+    int count=0;
+    for(int num:picks){
+      if(isin(drawn,num)){
+        count++;
+      }
+    }
+    return count;
   }
 
 
