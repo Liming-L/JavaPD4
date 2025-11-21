@@ -13,6 +13,8 @@ class Main {
     System.out.println("Total price including tax:"+totalPriceWithTax);
 
     int[] numbers={3,7,12,5,9,21};
+    int search1=5;
+    int search2=10;
   }
 
   double total(double[] prices){
