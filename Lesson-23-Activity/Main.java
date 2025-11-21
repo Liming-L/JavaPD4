@@ -15,8 +15,8 @@ class Main {
     int[] numbers={3,7,12,5,9,21};
     int search1=5;
     int search2=10;
-    System.out.println(search1+"in array?"+isin(numbers,search1));
-    System.out.println(search2+"in array?"+isin(numbers,search2));
+    System.out.println(search1+" in array?"+isin(numbers,search1));
+    System.out.println(search2+" in array?"+isin(numbers,search2));
   }
 
   double total(double[] prices){
