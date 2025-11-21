@@ -12,6 +12,24 @@ class Main {
 
   }
 
+  double total(double[] prices){
+    double taxRate=0.08525;
+    double totalPrice=0;
+
+    for(double price:prices){
+      totalPrice+=price;
+    }
+
+    totalPrice+=totalPrice*taxRate;
+    return totalPrice;
+  }
+
+  void main(String[]args){
+    double[] prices={19.99,49.99,15.49,23.99,10.00};
+    dobuel totalPriceWithTax=total(prices);
+    System.out.printf("Total price including tax:",totalPriceWithTax);
+  }
+
 
 
   // Use these functions below for the activity
