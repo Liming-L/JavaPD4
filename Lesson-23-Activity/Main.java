@@ -10,7 +10,7 @@ class Main {
   void init(){
     double[] prices={19.99,49.99,15.49,23.99,10.00};
     double totalPriceWithTax=total(prices);
-    System.out.println("Total price including tax:",totalPriceWithTax);
+    System.out.println("Total price including tax:"+totalPriceWithTax);
   }
 
   double total(double[] prices){
@@ -23,6 +23,10 @@ class Main {
 
     totalPrice+=totalPrice*taxRate;
     return totalPrice;
+  }
+
+  boolean isin(int[] numbers,int target){
+    for(int num:numbers)
   }
 
 
