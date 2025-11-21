@@ -23,8 +23,8 @@ class Main {
     int matches=checkLotto(picks,drawn);
     System.out.println("You matched "+matches+" lotto numbers!");
 
-    int[]numbers={5,12,7,3,42,8};
-    System.out.println(biggest(numbers));
+    int[]nums={5,12,7,3,42,8};
+    System.out.println(biggest(nums));
   }
 
   double total(double[] prices){
