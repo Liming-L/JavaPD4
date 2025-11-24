@@ -30,7 +30,7 @@ class Main {
 
     Random rand=new Random();
     StringBuilder password=new StringBuilder();
-    for(int i=0li<8;i++){
+    for(int i=0;i<8;i++){
       int index=rand.nextInt(chars.length());
       password.append(chars.charAt(index));
     }
