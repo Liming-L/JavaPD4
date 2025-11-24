@@ -8,8 +8,8 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-    System.out.println(toUpper("Hello World!")); // HELLO WORLD!
-    System.out.println(genPswd());   
+    System.out.println(toUpper("Hello World!"));
+    System.out.println(genPswd());
   }
 
   String toUpper(String str) {
@@ -25,7 +25,7 @@ class Main {
     return result.toString();
   }
 
-  String genpswd(){
+  String genPswd(){
     String chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "0123456789";
 
     Random rand=new Random();
