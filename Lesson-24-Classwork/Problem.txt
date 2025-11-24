@@ -1,0 +1,9 @@
+Problem 1:
+
+Write a function toUpper that accepts a string and converts all lower case letter to upper case and returns the result.
+
+Problem 2:
+
+Write a function genPswd that generates and returns an character password.
+
+
