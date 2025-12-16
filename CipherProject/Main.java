@@ -14,7 +14,7 @@ class Main {
   void init(){
     Scanner sc = new Scanner(System.in);
 
-    // 1. 读取 original.txt 文件（保持文件读取逻辑）
+    // 1. Read original.txt file
     String msg = "";
     try {
       File file = new File("original.txt");
@@ -25,40 +25,38 @@ class Main {
       return;
     }
 
-    // 2. 获取用户输入的移位次数
+    // 2. Get user's number to shift the cipher
     System.out.print("Enter a number to shift the cipher: ");
     int shift = sc.nextInt();
     sc.close();
 
     // ----- LEVEL 1 -----
-    // 原始文本 → Level1加密
+    // Orinial text → Level1 encrypted
     String enc1 = cipher(msg, shift);
-    print("Level1 Cipher: " + enc1);
-    // Level1加密结果 → Level1解码（验证）
+    print("Level 1 Cipher: " + enc1);
+    // Level1 Result → Level1 decode
     String dec1 = decipher(enc1, shift);
-    print("Level1 Decipher: " + dec1);
+    print("Level 1 Decipher: " + dec1);
 
     // ----- LEVEL 2 -----
-    // Level1加密结果 → Level2加密（核心逻辑：级联输入）
+    // Level1 encrypted → Level2 encrypted
     String enc2 = splitEncode(enc1);
-    print("Level2 SplitEncode: " + enc2);
-    // Level2加密结果 → Level2解码（验证）
+    print("Level 2 SplitEncode: " + enc2);
+    // Level2 encrypted → Level2 decode
     String dec2 = splitDecode(enc2);
-    print("Level2 SplitDecode: " + dec2);
+    print("Level 2 SplitDecode: " + dec2);
 
     // ----- LEVEL 3 -----
-    // Level2加密结果 → Level3加密（核心逻辑：级联输入）
+    // Level2 encrypted → Level3 encrypted
     String enc3 = substitution(enc2);
-    print("Level3 Substitution: " + enc3);
-    // Level3加密结果 → Level3解码（验证）
+    print("Level 3 Substitution: " + enc3);
+    // Level3 encrypted → Level3 decode
     String dec3 = desubstitution(enc3);
-    print("Level3 Desubstitution: " + dec3);
-
-    // 已删除：Final Encrypted Text 和 Full Decrypted Text 相关输出
+    print("Level 3 Desubstitution: " + dec3);
   }
 
   // ------------------------------------------------------------
-  // LEVEL 1: CAESAR CIPHER ENCODE（原逻辑不变）
+  // LEVEL 1: CAESAR CIPHER ENCODE
   // ------------------------------------------------------------
   String cipher(String txt, int shift){
     String bld="";
@@ -76,7 +74,7 @@ class Main {
   }
 
   // ------------------------------------------------------------
-  // LEVEL 1: CAESAR CIPHER DECODE（原逻辑不变）
+  // LEVEL 1: CAESAR CIPHER DECODE
   // ------------------------------------------------------------
   String decipher(String txt, int shift){
     String bld="";
@@ -94,7 +92,7 @@ class Main {
   }
 
   // ------------------------------------------------------------
-  // LEVEL 2: SPLIT ENCODE（原逻辑不变）
+  // LEVEL 2: SPLIT ENCODE
   // ------------------------------------------------------------
   String splitEncode(String txt){
     int mid = txt.length()/2;
@@ -102,7 +100,7 @@ class Main {
   }
 
   // ------------------------------------------------------------
-  // LEVEL 2: SPLIT DECODE（原逻辑不变）
+  // LEVEL 2: SPLIT DECODE
   // ------------------------------------------------------------
   String splitDecode(String txt){
     int mid = txt.length()/2;
@@ -110,7 +108,7 @@ class Main {
   }
 
   // ------------------------------------------------------------
-  // LEVEL 3: SUBSTITUTION MAPPING TABLES（原映射表不变）
+  // LEVEL 3: SUBSTITUTION MAPPING TABLES
   // ------------------------------------------------------------
   char[] latinMap = {
     'A','B','C','D','E','F','G','H','I','J',
@@ -125,7 +123,7 @@ class Main {
   };
 
   // ------------------------------------------------------------
-  // LEVEL 3: SUBSTITUTION ENCODE (case-preserving)（原逻辑不变）
+  // LEVEL 3: SUBSTITUTION ENCODE 
   // ------------------------------------------------------------
   String substitution(String txt){
     String bld = "";
@@ -139,7 +137,7 @@ class Main {
         if(upper == latinMap[j]){
           mapped = cyrillicMap[j];
 
-          // Restore lowercase if original was lowercase
+          
           if(Character.isLowerCase(original)){
             mapped = Character.toLowerCase(mapped);
           }
@@ -152,7 +150,7 @@ class Main {
   }
 
   // ------------------------------------------------------------
-  // LEVEL 3: SUBSTITUTION DECODE (case-preserving)（原逻辑不变）
+  // LEVEL 3: SUBSTITUTION DECODE (case-preserving)
   // ------------------------------------------------------------
   String desubstitution(String txt){
     String bld = "";
@@ -166,7 +164,7 @@ class Main {
         if(upper == cyrillicMap[j]){
           mapped = latinMap[j];
 
-          // Restore lowercase if original was lowercase
+          
           if(Character.isLowerCase(original)){
             mapped = Character.toLowerCase(mapped);
           }
