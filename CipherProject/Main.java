@@ -20,7 +20,7 @@ class Main {
       File file = new File("original.txt");
       msg = new String(Files.readAllBytes(file.toPath()));
     } catch (IOException e) {
-      System.err.println("读取 original.txt 失败：" + e.getMessage());
+      System.err.println("Read original.txt fail：" + e.getMessage());
       sc.close();
       return;
     }
