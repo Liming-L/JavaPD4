@@ -2,6 +2,7 @@ All our questions will be based on the cr101 table using the students database.
 
 Challenge 1:
 Create the database object and connect to the students database.  
+
 HINT: add the database name when calling the constructor.
 
 Challenge 2:
