@@ -1,7 +1,7 @@
 let songs = [];
 
 async function init(){
-  let link ="https://improved-goldfish-x5q7vpqrp79wh545-8500.app.github.dev/";
+  let link ="https://legendary-doodle-v6rv45jv475xh6wj-8500.app.github.dev/";
   let route="tracks";
   let info = await fetch(link + route);
   songs = await info.json();
