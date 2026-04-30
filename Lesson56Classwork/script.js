@@ -1,39 +1,97 @@
-let data,customers;
-function init(){
-  $.ajaxSetup({async: false});
+/*
+div{
+  padding: 20px;
+  text-align: center;
+  border: solid 2px black;
+}
+*/
+#header{
+  padding: 20px;
+  text-align: center;
+  border: solid 2px black;
+  background-color:PeachPuff;
+}
+#nav{
   
-  let link = "https://Lesson48DemoDBServer.ernestoporchett.repl.co";
-  let route= "/customers"
-  customers = $.getJSON(link+route).responseJSON;
-
-  generateCards(customers)
-
-
+  padding: 5px;
+  text-align: center;
+  border: solid 2px black;
+  background-color:Khaki;
 }
 
-function generateCards(customers){
-  let centerpanel = document.getElementById("centerpanel");
-
-
-    
-
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border: solid 2px black;
 }
 
-function filter(){
-  let country = document.getElementById("country").value;
-  console.log(country);
+.panel{
+  flex:1;
+  text-align: center;
+  border: solid 2px black;
+  min-height:500px;
+  background-color:Gold;
+}
+#centerpanel{
+  flex:3;
+  text-align: center;
+  border: solid 2px black;
+  min-height:500px;
+  background-color:Plum;
+}
+#foot{
+  border: solid 2px black;
+  background-color:PapayaWhip;
+}
 
-  let customerList = []; //create a list of songs searched for
-  
-  for(let i=0; i<customers.length;i++){
-    let customer = customers[i] //get each sog
-    //make sure the list is no
-    if( customer.Country == country ) {
-          //add to the new list
-          customerList.push(customer);
-       }
-  }
-  console.log(`number found ${customerList.length}`)
-  generateCards(customerList);
-  
+.card{
+  /*flex:1;   THIS SQUISHES */
+  /*flex-basis:150px   */
+  width:450px;
+  margin:5px;
+  padding:5px;
+  border:1px solid black;
+  text-align:center;
+  background-color:#dedfe7;
+}
+/* target all h4 elements*/
+h4{
+  color:#0000ff;
+}
+/*target all the paragraphs in the card class*/
+.card p{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card div{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:15px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card di2{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card img{
+  width:75px;
+  height:75px;
+}
+.button{
+  text-decoration:none;
+  background-color:blue;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+}
+.button:hover{
+  background-color:cornflowerblue;
 }

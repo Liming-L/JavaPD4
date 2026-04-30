@@ -142,4 +142,3 @@ class Collapsible{
     $_(`#${container}`).append(this.div)
   }
 }
-
